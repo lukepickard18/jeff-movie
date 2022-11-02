@@ -31,10 +31,10 @@ export default function Header() {
                 size="large"
                 color="inherit"
                 aria-label="menu"
-                sx={{ mr: 10 }}
+                sx={{ mr: 8 }}
                 
             >
-                <HomeIcon style={{ fontSize: "65px" }} />
+                <HomeIcon style={{ fontSize: "50px" }} />
             </IconButton>
             </Tooltip>
             <Tooltip title="Trending">
@@ -43,9 +43,9 @@ export default function Header() {
                 edge="start"
                 color="inherit"
                 aria-label="menu"
-                sx={{ mr: 10 }}
+                sx={{ mr: 8 }}
             >
-                <FlashOnIcon style={{ fontSize: "65px" }} />
+                <FlashOnIcon style={{ fontSize: "50px" }} />
             </IconButton>
             </Tooltip>
             <Tooltip title="Verified">
@@ -54,9 +54,9 @@ export default function Header() {
                 edge="start"
                 color="inherit"
                 aria-label="menu"
-                sx={{ mr: 10 }}
+                sx={{ mr: 8 }}
             >
-                <LiveTvIcon style={{ fontSize: "65px" }}/>
+                <LiveTvIcon style={{ fontSize: "50px" }}/>
             </IconButton>
             </Tooltip>
             
@@ -66,9 +66,9 @@ export default function Header() {
                 edge="start"
                 color="inherit"
                 aria-label="menu"
-                sx={{ mr: 10 }}
+                sx={{ mr: 8 }}
             >
-                <VideoLibraryIcon style={{ fontSize: "65px" }} />
+                <VideoLibraryIcon style={{ fontSize: "50px" }} />
             </IconButton>
             </Tooltip>
 
@@ -78,21 +78,21 @@ export default function Header() {
                 edge="start"
                 color="inherit"
                 aria-label="menu"
-                sx={{ mr: 10 }}
+                sx={{ mr: 8 }}
             >
-                <SearchIcon style={{ fontSize: "65px" }} />
+                <SearchIcon style={{ fontSize: "50px" }} />
             </IconButton>
             </Tooltip>
-
+            
             <Tooltip title="Account">
             <IconButton
                 size="large"
                 edge="start"
                 color="inherit"
                 aria-label="JEFF"
-                sx={{ mr: 10 }}
+                sx={{ mr: 8 }}
             >
-                <PersonOutlineIcon style={{ fontSize: "65px" }} />
+                <PersonOutlineIcon style={{ fontSize: "50px" }} />
             </IconButton>
             </Tooltip>
             </Toolbar>
@@ -104,7 +104,7 @@ export default function Header() {
 const useStyles = createUseStyles({
     appBar: {
         backgroundColor: "#00246A",
-        height: "115px",
+        
     },
 });
 
