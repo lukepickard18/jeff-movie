@@ -12,6 +12,7 @@ import VideoLibraryIcon from '@mui/icons-material/VideoLibrary';
 import { ForwardRef } from 'react';
 import { createUseStyles } from "react-jss";
 import { makeStyles } from '@mui/material';
+import { Tooltip } from '@material-ui/core';
 
 import './Header.css';
 
@@ -25,6 +26,7 @@ export default function Header() {
             root: classes.appBar
         }}>
             <Toolbar>
+                <Tooltip title="Home">
             <IconButton
                 size="large"
                 color="inherit"
@@ -34,6 +36,8 @@ export default function Header() {
             >
                 <HomeIcon style={{ fontSize: "65px" }} />
             </IconButton>
+            </Tooltip>
+            <Tooltip title="Trending">
             <IconButton
                 size="large"
                 edge="start"
@@ -43,6 +47,8 @@ export default function Header() {
             >
                 <FlashOnIcon style={{ fontSize: "65px" }} />
             </IconButton>
+            </Tooltip>
+            <Tooltip title="Verified">
             <IconButton
                 size="large"
                 edge="start"
@@ -52,6 +58,9 @@ export default function Header() {
             >
                 <LiveTvIcon style={{ fontSize: "65px" }}/>
             </IconButton>
+            </Tooltip>
+            
+            <Tooltip title="Collections">
             <IconButton
                 size="large"
                 edge="start"
@@ -61,6 +70,9 @@ export default function Header() {
             >
                 <VideoLibraryIcon style={{ fontSize: "65px" }} />
             </IconButton>
+            </Tooltip>
+
+            <Tooltip title="Search">
             <IconButton
                 size="large"
                 edge="start"
@@ -70,15 +82,19 @@ export default function Header() {
             >
                 <SearchIcon style={{ fontSize: "65px" }} />
             </IconButton>
+            </Tooltip>
+
+            <Tooltip title="Account">
             <IconButton
                 size="large"
                 edge="start"
                 color="inherit"
-                aria-label="menu"
+                aria-label="JEFF"
                 sx={{ mr: 10 }}
             >
                 <PersonOutlineIcon style={{ fontSize: "65px" }} />
             </IconButton>
+            </Tooltip>
             </Toolbar>
         </AppBar>
         </div>
@@ -87,7 +103,8 @@ export default function Header() {
 
 const useStyles = createUseStyles({
     appBar: {
-        backgroundColor: "green",
+        backgroundColor: "#00246A",
+        height: "115px",
     },
 });
 
