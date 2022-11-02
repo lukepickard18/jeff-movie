@@ -20,7 +20,10 @@ export default function Header() {
     
     return (
         <div className={classes.root}>
-        <AppBar position="static">
+        <AppBar position="static"
+        classes = {{
+            root: classes.appBar
+        }}>
             <Toolbar>
             <IconButton
                 size="large"
@@ -83,14 +86,8 @@ export default function Header() {
     }
 
 const useStyles = createUseStyles({
-    root: {
-        flexGrow: 1,
-    },
-    menuButton: {
-        marginRight: 2,
-    },
-    title: {
-        flexGrow: 1,
+    appBar: {
+        backgroundColor: "green",
     },
 });
 
