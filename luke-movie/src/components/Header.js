@@ -27,45 +27,46 @@ export default function Header() {
                 edge="start"
                 color="inherit"
                 aria-label="menu"
-                sx={{ mr: 2 }}
+                sx={{ mr: 5 }}
+                
             >
-                <HomeIcon />
+                <HomeIcon style={{ fontSize: "80px" }} />
             </IconButton>
             <IconButton
                 size="large"
                 edge="start"
                 color="inherit"
                 aria-label="menu"
-                sx={{ mr: 2 }}
+                sx={{ mr: 5 }}
             >
-                <FlashOnIcon />
+                <FlashOnIcon style={{ fontSize: "80px" }} />
             </IconButton>
             <IconButton
                 size="large"
                 edge="start"
                 color="inherit"
                 aria-label="menu"
-                sx={{ mr: 2 }}
+                sx={{ mr: 5 }}
             >
-                <LiveTvIcon />
+                <LiveTvIcon style={{ fontSize: "80px" }}/>
             </IconButton>
             <IconButton
                 size="large"
                 edge="start"
                 color="inherit"
                 aria-label="menu"
-                sx={{ mr: 2 }}
+                sx={{ mr: 5 }}
             >
-                <VideoLibraryIcon />
+                <VideoLibraryIcon style={{ fontSize: "80px" }} />
             </IconButton>
             <IconButton
                 size="large"
                 edge="start"
                 color="inherit"
                 aria-label="menu"
-                sx={{ mr: 2 }}
+                sx={{ mr: 5 }}
             >
-                <SearchIcon />
+                <SearchIcon style={{ fontSize: "80px" }} />
             </IconButton>
             </Toolbar>
         </AppBar>
