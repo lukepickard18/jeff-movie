@@ -24,49 +24,57 @@ export default function Header() {
             <Toolbar>
             <IconButton
                 size="large"
-                edge="start"
                 color="inherit"
                 aria-label="menu"
-                sx={{ mr: 5 }}
+                sx={{ mr: 10 }}
                 
             >
-                <HomeIcon style={{ fontSize: "80px" }} />
+                <HomeIcon style={{ fontSize: "65px" }} />
             </IconButton>
             <IconButton
                 size="large"
                 edge="start"
                 color="inherit"
                 aria-label="menu"
-                sx={{ mr: 5 }}
+                sx={{ mr: 10 }}
             >
-                <FlashOnIcon style={{ fontSize: "80px" }} />
+                <FlashOnIcon style={{ fontSize: "65px" }} />
             </IconButton>
             <IconButton
                 size="large"
                 edge="start"
                 color="inherit"
                 aria-label="menu"
-                sx={{ mr: 5 }}
+                sx={{ mr: 10 }}
             >
-                <LiveTvIcon style={{ fontSize: "80px" }}/>
+                <LiveTvIcon style={{ fontSize: "65px" }}/>
             </IconButton>
             <IconButton
                 size="large"
                 edge="start"
                 color="inherit"
                 aria-label="menu"
-                sx={{ mr: 5 }}
+                sx={{ mr: 10 }}
             >
-                <VideoLibraryIcon style={{ fontSize: "80px" }} />
+                <VideoLibraryIcon style={{ fontSize: "65px" }} />
             </IconButton>
             <IconButton
                 size="large"
                 edge="start"
                 color="inherit"
                 aria-label="menu"
-                sx={{ mr: 5 }}
+                sx={{ mr: 10 }}
             >
-                <SearchIcon style={{ fontSize: "80px" }} />
+                <SearchIcon style={{ fontSize: "65px" }} />
+            </IconButton>
+            <IconButton
+                size="large"
+                edge="start"
+                color="inherit"
+                aria-label="menu"
+                sx={{ mr: 10 }}
+            >
+                <PersonOutlineIcon style={{ fontSize: "65px" }} />
             </IconButton>
             </Toolbar>
         </AppBar>
