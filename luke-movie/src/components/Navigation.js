@@ -1,6 +1,6 @@
 import endpoints from '../utils/endpoints';
 import { makeStyles } from '@mui/styles';
-import { AppBar, Toolbar, IconButton, Tooltip } from '@mui/material';
+import { AppBar, Toolbar, IconButton, Tooltip, Link } from '@mui/material';
 import HomeIcon from '@mui/icons-material/Home';
 import { createUseStyles } from 'react-jss';
 
@@ -36,5 +36,10 @@ const useStyles = makeStyles({
         fontSize: "20px",
         fontWeight: "bold",
         color: "white",
+        "&:hover": {
+            color: "grey",
+            transition: "all 0.5s ease",
+            fontSize: "22px",
+        },
     },
 });
