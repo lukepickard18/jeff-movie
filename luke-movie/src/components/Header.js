@@ -19,7 +19,7 @@ export default function Header() {
     
     return (
         
-        <AppBar position="static" style = {{backgroundColor: '#051b23'}}>
+        <AppBar position="static" style = {{backgroundColor: '#051b23', boxShadow: 'none'}}>
         
             <Toolbar>
                 <Tooltip title="Home">
