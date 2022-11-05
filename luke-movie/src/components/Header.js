@@ -14,13 +14,11 @@ import { createUseStyles } from "react-jss";
 import { makeStyles } from '@mui/material';
 import { Tooltip } from '@material-ui/core';
 
-import './Header.css';
-
 export default function Header() {
     const classes = useStyles();
     
     return (
-        <div className={classes.root}>
+        
         <AppBar position="static"
         classes = {{
             root: classes.appBar
@@ -97,15 +95,15 @@ export default function Header() {
             </Tooltip>
             </Toolbar>
         </AppBar>
-        </div>
+        
     );
     }
 
 const useStyles = createUseStyles({
     appBar: {
-        backgroundColor: "#00246A",
+        backgroundColor: "green",
         
-    },
+    }
 });
 
     
