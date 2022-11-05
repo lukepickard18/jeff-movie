@@ -10,7 +10,7 @@ function App() {
       <style>{'body { background-color: #051b23; }'}</style>
       <Header/>
       <Navigation/>
-      {/* <MovieCard/> */}
+      <MovieCard/>
     </div>
   );
 }

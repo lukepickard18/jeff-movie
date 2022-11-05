@@ -30,14 +30,19 @@ const MovieCard = forwardRef(({ movie }, ref) => {
 
       <h2>{movie.title || movie.original_name}</h2>
 
-      {/* 
+      {
+        <span className={classes.stats}>
+          {movie.media_type && `${movie.media_type} • `}
+          {movie.release_date || movie.first_air_date} •
+          <button>+</button>
+        </span>
+      /* 
         Declare a span element with the className value - classes.stats. This element will contain the movie's media type,
         release date or first air date and vote count.
       */}
     </div>
   );
 });
-
 const useStyles = createUseStyles({
   card: {
     color: "#ffffff",
