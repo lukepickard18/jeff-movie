@@ -4,7 +4,6 @@ import { AppBar, Toolbar, IconButton, Tooltip } from '@mui/material';
 import HomeIcon from '@mui/icons-material/Home';
 import { createUseStyles } from 'react-jss';
 
-import './Navigation.css';
 
 export default function Navigation() {
     const classes = useStyles();
@@ -12,6 +11,7 @@ export default function Navigation() {
     return (
         endpoints.map((endpoint) => (
             <ul className= {classes.navigation}>{endpoint.type}</ul>
+            
         ))
              
     )
@@ -25,11 +25,16 @@ export default function Navigation() {
             
                 
 const useStyles = makeStyles({
-    appBar: {
-        backgroundColor: "#141414",
+    ToolBar: {
+        display : 'inline',
         height: '150px',
     },
     navigation: {
         display : "inline",
+        alignItems: "center",
+        position: "relative",
+        fontSize: "20px",
+        fontWeight: "bold",
+        color: "white",
     },
 });

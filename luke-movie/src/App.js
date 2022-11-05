@@ -6,6 +6,7 @@ import Navigation from './components/Navigation';
 function App() {
   return (
     <div className="App">
+      <style>{'body { background-color: #051b23; }'}</style>
       <Header/>
       <Navigation/>
     </div>
