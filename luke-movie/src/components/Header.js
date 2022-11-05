@@ -15,7 +15,6 @@ import { makeStyles } from '@mui/material';
 import { Tooltip } from '@material-ui/core';
 
 export default function Header() {
-    const classes = useStyles();
     
     return (
         
@@ -97,11 +96,5 @@ export default function Header() {
     );
     }
 
-const useStyles = createUseStyles({
-    appBar: {
-        backgroundColor: "green",
-        
-    }
-});
 
     

@@ -7,7 +7,6 @@ import { createUseStyles } from 'react-jss';
 
 export default function Navigation() {
     const classes = useStyles();
-    console.log(endpoints.type);
     return (
         endpoints.map((endpoint) => (
             <ul className= {classes.navigation}>{endpoint.type}</ul>
@@ -16,14 +15,7 @@ export default function Navigation() {
              
     )
 }
-    
-
-    
-
-
-
-            
-                
+               
 const useStyles = makeStyles({
     ToolBar: {
         display : 'inline',
