@@ -19,10 +19,8 @@ export default function Header() {
     
     return (
         
-        <AppBar position="static"
-        classes = {{
-            root: classes.appBar
-        }}>
+        <AppBar position="static" style = {{backgroundColor: '#051b23'}}>
+        
             <Toolbar>
                 <Tooltip title="Home">
             <IconButton
