@@ -15,7 +15,7 @@ const MovieCard = forwardRef(({ movie }, ref) => {
       />
       {
         <TextTruncate
-          line={1}
+          line={2}
           element="p"
           truncateText="…"
           text={movie.overview}
@@ -32,9 +32,9 @@ const MovieCard = forwardRef(({ movie }, ref) => {
 
       {
         <span className={classes.stats}>
-          {movie.media_type && `${movie.media_type} • `}
-          {movie.release_date || movie.first_air_date} •
-          <button>+</button>
+          {`${movie.media_type.charAt(0).toUpperCase() + movie.media_type.slice(1)} • `}
+          Release \ First Air Date {movie.release_date || movie.first_air_date} •
+          <button>⭐ {movie.vote_count}</button>
         </span>
       /* 
         Declare a span element with the className value - classes.stats. This element will contain the movie's media type,
@@ -67,6 +67,7 @@ const useStyles = createUseStyles({
   },
   stats: {
     display: "none",
+    fontSize: 12,
   },
 });
 
