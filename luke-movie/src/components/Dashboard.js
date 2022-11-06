@@ -28,6 +28,7 @@ export default function Dashboard() {
     }
     const useStyles = createUseStyles({
         movies: {
+            rowGap: 50,
             display: "flex",
             flexWrap: "wrap",
             justifyContent: "space-evenly",

@@ -42,7 +42,7 @@ const MovieCard = forwardRef(({ movie }, ref) => {
         <span className={classes.stats}>
           {`${movie.media_type.charAt(0).toUpperCase() + movie.media_type.slice(1)} • `}
           Release \ First Air Date {movie.release_date || movie.first_air_date} •
-          <button>⭐ {movie.vote_count}</button>
+          <button className={classes.button}>⭐ {movie.vote_count}</button>
         </span>
       /* 
         Declare a span element with the className value - classes.stats. This element will contain the movie's media type,
@@ -75,6 +75,14 @@ const useStyles = createUseStyles({
   },
   stats: {
     display: "none",
+  },
+  button: {
+    backgroundColor: "transparent",
+    border: "none",
+    color: "#ffffff",
+    fontSize: 16,
+    fontWeight: "bold",
+    outline: "none",
   },
 });
 
