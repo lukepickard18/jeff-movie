@@ -23,10 +23,10 @@ const useStyles = makeStyles({
         alignItems: "center",
         position: "relative",
         fontSize: "20px",
-        fontWeight: "bold",
-        color: "white",
+        fontWeight: "inherit",
+        color: "grey",
         "&:hover": {
-            color: "grey",
+            color: "white",
             transition: "all 0.5s ease",
             fontSize: "22px",
         },
