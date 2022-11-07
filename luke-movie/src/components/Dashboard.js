@@ -16,7 +16,7 @@ export default function Dashboard() {
         return req;
         }
         fetchData(); //Async functions have to be wrapped in a function
-    }, []); //This is a dependency array, it tells the useEffect hook to only run once when the component mounts
+    }, []); //This is a dependency array it tells the useEffect hook to only run once when the component mounts
     
     return (
         <div className={classes.movies}>
