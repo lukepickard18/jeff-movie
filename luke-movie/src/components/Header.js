@@ -1,3 +1,7 @@
+/**
+ * This is the Header component. It is responsible for displaying the header.
+ */
+
 import HomeIcon from '@mui/icons-material/Home';
 import IconButton from "@mui/material/IconButton";
 import Toolbar from "@mui/material/Toolbar";

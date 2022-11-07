@@ -1,6 +1,9 @@
+/**
+ * This is the Navigation component. It is responsible for displaying the navigation bar.
+ */
+
 import endpoints from '../utils/endpoints';
 import { makeStyles } from '@mui/styles';
-
 
 export default function Navigation() {
     const classes = useStyles();
