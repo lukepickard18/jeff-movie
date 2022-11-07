@@ -15,8 +15,8 @@ export default function Dashboard() {
         setMovies(req.data.results);
         return req;
         }
-        fetchData();
-    }, []);
+        fetchData(); //Async functions have to be wrapped in a function
+    }, []); //This is a dependency array, it tells the useEffect hook to only run once when the component mounts
     
     return (
         <div className={classes.movies}>
@@ -28,11 +28,13 @@ export default function Dashboard() {
     }
     const useStyles = createUseStyles({
         movies: {
+            margin: "20%",
             rowGap: 50,
-            display: "flex",
+            display: "flex",    
             flexWrap: "wrap",
             justifyContent: "space-evenly",
-            
+            marginTop: 0,
+
         },
     });
         
