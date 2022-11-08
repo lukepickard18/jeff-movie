@@ -3,4 +3,4 @@ Referencing how I formatted line 38-39 in MovieCard.js from the following link:
 *Title - Capitalize the first letter of a String in React
 *Date - May 2nd 2022
 *Code Version - N/A
-*Availability - https://bobbyhadz.com/blog/react-capitalize-first-letter#:~:text=To%20capitalize%20the%20first%20letter%20of%20a%20string%20in%20React%3A&text=Call%20the%20toUpperCase()%20method,Concatenate%20the%20results.
+\*Availability - https://bobbyhadz.com/blog/react-capitalize-first-letter#:~:text=To%20capitalize%20the%20first%20letter%20of%20a%20string%20in%20React%3A&text=Call%20the%20toUpperCase()%20method,Concatenate%20the%20results.

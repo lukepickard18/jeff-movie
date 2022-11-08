@@ -5,7 +5,7 @@
 
 import { forwardRef } from "react";
 import { createUseStyles } from "react-jss";
-import TextTruncate from 'react-text-truncate'; //This is a library that truncates text.
+import TextTruncate from "react-text-truncate"; //This is a library that truncates text.
 
 /*
 Referencing how I formatted line 38-39 from the following link:
@@ -15,7 +15,8 @@ Referencing how I formatted line 38-39 from the following link:
 *Code Version - N/A
 *Availability - https://bobbyhadz.com/blog/react-capitalize-first-letter#:~:text=To%20capitalize%20the%20first%20letter%20of%20a%20string%20in%20React%3A&text=Call%20the%20toUpperCase()%20method,Concatenate%20the%20results.
 */
-const MovieCard = forwardRef(({ movie }, ref) => { //This is a prop that is being passed to the MovieCard component.
+const MovieCard = forwardRef(({ movie }, ref) => {
+  //This is a prop that is being passed to the MovieCard component.
   const classes = useStyles();
 
   const BASE_URL = "https://image.tmdb.org/t/p/original";
@@ -23,7 +24,7 @@ const MovieCard = forwardRef(({ movie }, ref) => { //This is a prop that is bein
   return (
     <div ref={ref} className={classes.card}>
       <img
-        src={`${BASE_URL}/${movie.backdrop_path || movie.poster_path}`} 
+        src={`${BASE_URL}/${movie.backdrop_path || movie.poster_path}`}
         alt={movie.title}
       />
       {
@@ -33,30 +34,35 @@ const MovieCard = forwardRef(({ movie }, ref) => { //This is a prop that is bein
           truncateText="…"
           text={movie.overview}
         />
-      /* 
+        /* 
         Declare the TextTruncate component from the react-text-truncate dependency. This components has four props that you need to use:
           - line: The number of lines to truncate the text to
           - element: The element to wrap the text in
           - truncateText: The text to append to the end of the truncated text
           - text: The text to truncate
-      */}
+      */
+      }
 
       <h2>{movie.title || movie.original_name}</h2>
 
       {
-        <span className={classes.stats}> 
-          {`${movie.media_type.charAt(0).toUpperCase() + movie.media_type.slice(1)} • `} 
-          Release \ First Air Date {movie.release_date || movie.first_air_date} •
-          <button className={classes.button}>⭐ {movie.vote_count}</button>
+        <span className={classes.stats}>
+          {`${
+            movie.media_type.charAt(0).toUpperCase() + movie.media_type.slice(1)
+          } • `}
+          Release \ First Air Date {movie.release_date || movie.first_air_date}{" "}
+          •<button className={classes.button}>⭐ {movie.vote_count}</button>
         </span>
-      /* 
+        /* 
         Declare a span element with the className value - classes.stats. This element will contain the movie's media type,
         release date or first air date and vote count.
-      */}
+      */
+      }
     </div>
   );
 });
-const useStyles = createUseStyles({ //This is a hook that allows you to use JSS to style your components.
+const useStyles = createUseStyles({
+  //This is a hook that allows you to use JSS to style your components.
   card: {
     color: "#ffffff",
     width: 500,
