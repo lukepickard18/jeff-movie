@@ -1,5 +1,8 @@
 /**
  * This is the Navigation component. It is responsible for displaying the navigation bar.
+ * Using Material UI to style the navigation bar.
+ * And using the makeStyles hook to style the navigation bar.
+ * 
  */
 
 import endpoints from '../utils/endpoints';

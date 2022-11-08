@@ -1,5 +1,7 @@
 /**
  * This is the Header component. It is responsible for displaying the header.
+ * Using Material UI to style the header.
+ * And using the makeStyles hook to style the header.
  */
 
 import HomeIcon from '@mui/icons-material/Home';

@@ -1,5 +1,7 @@
 /**
  * This is the Dashboard component. It is responsible for displaying the list of movies.
+ * It uses the axios instance to make API calls. It then uses the useState hook to store the data.
+ * It then maps through the new usestate of movies and renders a moviecard component for each movie.
  * 
  */
 

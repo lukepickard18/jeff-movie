@@ -1,3 +1,8 @@
+/**
+ * This is the MovieCard component. It is responsible for displaying the movie cards.
+ * It uses the prop movie to display the movie poster, title, and overview.
+ */
+
 import { forwardRef } from "react";
 import { createUseStyles } from "react-jss";
 import TextTruncate from 'react-text-truncate';
