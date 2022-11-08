@@ -6,18 +6,18 @@ Referencing how I formatted line 38-39 in MovieCard.js from the following link:
 \*Availability - https://bobbyhadz.com/blog/react-capitalize-first-letter#:~:text=To%20capitalize%20the%20first%20letter%20of%20a%20string%20in%20React%3A&text=Call%20the%20toUpperCase()%20method,Concatenate%20the%20results.
 
 
-## SETUP
-```cd luke-movie```
+## Setup the application. (After Cloning)
+1. ```cd luke-movie```
 
-```npm i```
+2. ```npm i```
 
-```cp example.env .env```
+3, ```cp example.env .env```
 
-```npm run start```
+4. ```npm run start```
 
 
-## LINT AND FIX THE CODE
+## Lint and fix the code.
 
-```npm run prettier```
+1. ```npm run prettier```
 
-```npm run lint:fix```
+2. ```npm run lint:fix```
