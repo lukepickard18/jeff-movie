@@ -11,7 +11,7 @@ Referencing how I formatted line 38-39 in MovieCard.js from the following link:
 
 2. ```npm i```
 
-3, ```cp example.env .env```
+3. ```cp example.env .env```
 
 4. ```npm run start```
 
