@@ -1,8 +1,9 @@
-import logo from './logo.svg';
+/**
+ * This is the App component. It is responsible for displaying the entire application.
+ */
 import './App.css';
 import Header from './components/Header';
 import Navigation from './components/Navigation';
-import MovieCard from './components/MovieCard';
 import Dashboard from './components/Dashboard';
 
 function App() {
