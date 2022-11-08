@@ -4,7 +4,7 @@
  * And using the makeStyles hook to style the header.
  */
 
-import HomeIcon from '@mui/icons-material/Home';
+import HomeIcon from '@mui/icons-material/Home'; //Importing Icons from Material UI.
 import IconButton from "@mui/material/IconButton";
 import Toolbar from "@mui/material/Toolbar";
 import AppBar from "@mui/material/AppBar";
@@ -16,11 +16,11 @@ import VideoLibraryIcon from '@mui/icons-material/VideoLibrary';
 
 import { Tooltip } from '@material-ui/core';
 
-export default function Header() {
+export default function Header() { //This is the Header component.
     
     return (
-        
-        <AppBar position="static" style = {{backgroundColor: '#051b23', boxShadow: 'none'}}>
+        //This is the Material UI AppBar component.
+        <AppBar position="static" style = {{backgroundColor: '#051b23', boxShadow: 'none'}}> 
         
             <Toolbar>
                 <Tooltip title="Home">

@@ -15,11 +15,11 @@ import { createUseStyles } from "react-jss";
 
 
 export default function Dashboard() {
-    const [movies, setMovies] = useState([]);
+    const [movies, setMovies] = useState([]); //useState hook to store the data
     const classes = useStyles();
     useEffect(() => {
-        async function fetchMovies() {
-        const req = await instance.get(endpoints[0].url);
+        async function fetchMovies() { //async function to make API calls
+        const req = await instance.get(endpoints[0].url); //await the axios instance to make API calls
         setMovies(req.data.results);
         return req;
         }

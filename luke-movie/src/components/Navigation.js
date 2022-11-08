@@ -5,13 +5,13 @@
  * 
  */
 
-import endpoints from '../utils/endpoints';
+import endpoints from '../utils/endpoints'; //Importing the endpoints from the utils folder.
 import { makeStyles } from '@mui/styles';
 
-export default function Navigation() {
+export default function Navigation() { //This is the Navigation component.
     const classes = useStyles();
     return (
-        endpoints.map((endpoint) => (
+        endpoints.map((endpoint) => ( //This Maps through the endpoints and displays them.
             <ul className= {classes.navigation}>{endpoint.type}</ul>
             
         ))
