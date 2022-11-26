@@ -29,8 +29,8 @@ const MovieCard = forwardRef(({ movie }, ref) => {
       />
       {
         <TextTruncate
-          line={2}
-          element="p"
+          line={1.55}
+          element="div"
           truncateText="…"
           text={movie.overview}
         />
@@ -43,7 +43,7 @@ const MovieCard = forwardRef(({ movie }, ref) => {
       */
       }
 
-      <h2>{movie.title || movie.original_name}</h2>
+      <h2 className={classes.h2}> {movie.title || movie.original_name}</h2>
 
       {
         <span className={classes.stats}>
@@ -86,6 +86,8 @@ const useStyles = createUseStyles({
   },
   stats: {
     display: "none",
+    fontFamily: "Helvetica",
+    color: "#00cc66",
   },
   button: {
     backgroundColor: "transparent",
@@ -94,6 +96,10 @@ const useStyles = createUseStyles({
     fontSize: 16,
     fontWeight: "bold",
     outline: "none",
+    
+  },
+  h2: {
+    fontFamily: "Roboto",
   },
 });
 

@@ -17,12 +17,14 @@ export default function Dashboard() {
   useEffect(() => {
     async function fetchMovies() {
       //async function to make API calls
+      
       const req = await instance.get(endpoints[0].url); //await the axios instance to make API calls
       setMovies(req.data.results);
       return req;
     }
     fetchMovies(); //Async functions have to be wrapped in a function
   }, []); //This is a dependency array it tells the useEffect hook to only run once when the component mounts
+
 
   return (
     <div className={classes.movies}>
